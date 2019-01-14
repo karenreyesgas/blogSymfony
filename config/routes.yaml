@@ -1,0 +1,27 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+app_blogIndex:
+  path: /
+  controller: App\Controller\BlogController::index
+  
+app_blog:
+  path: /blog
+  controller: App\Controller\BlogController::blog
+
+app_blogSlug:
+  path: /blog/{slug}
+  controller: App\Controller\BlogController::slug
+
+app_Admin:
+  path: /admin
+  controller:  App\Controller\AdminController::index
+
+app_AdminBlog:
+  path: /admin/blog
+  controller: App\Controller\AdminController::blog
+
+app_AdminBlogEdit:
+  path: /admin/blog/{id}/edit
+  controller: App\Controller\AdminController::edit
+ 
